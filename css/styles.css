@@ -100,11 +100,26 @@ body {
     margin-bottom: 3vh;
 }
 
+.register {
+
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 6vh;
+    width: 28vh;
+    margin-top: 10vh;
+}
+
+.log-in-txt {
+
+    padding: 2vh 0 0 6vh;
+    margin-top: 1vh;
+}
+
+
 .req-txt {
 
     padding: 2vh 0 0 6vh;
     margin-top: 2vh;
-
 }
 
 .btn-sec {
