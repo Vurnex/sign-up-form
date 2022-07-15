@@ -21,7 +21,8 @@ body {
     align-items: center;
     background: rgba(3, 3, 3, 0.6);
     width: 100%;
-    margin-top: 40%;
+    height: 15vh;
+    margin-top: 30%;
 }
 
 .welcome-msg {
@@ -47,15 +48,15 @@ body {
 
     height: 100vh;
     width: 100%;
-    background-color: antiquewhite;
+    background-color:rgb(247, 247, 247);
     margin: 0;
 }
 
 .call-to-action {
 
-    background-color: white;
+    background-color: rgb(247, 247, 247);
     margin: 0;
-    height: 35vh;
+    height: 30vh;
 }
 
 .cta-txt {
@@ -71,7 +72,43 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 70vh;
+    width: 80vh;
     height: 15vh;
-    padding: 17vh 0 0 8vh;
+    padding: 12vh 0 0 8vh;
+}
+
+.form-sec {
+
+    background-color: white;
+    margin: 0;
+    height: 50vh;
+}
+
+.form-header {
+
+    margin: 0;
+    padding: 2vh 0 0 6vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.field-flex {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 0 6vh;
+    width: 79vh;
+    margin-bottom: 3vh;
+}
+
+.req-txt {
+
+    padding: 2vh 0 0 6vh;
+    margin-top: 2vh;
+
+}
+
+.btn-sec {
+
+    height: 10vh;
+    margin-top: auto;
 }
