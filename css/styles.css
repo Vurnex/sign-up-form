@@ -85,6 +85,9 @@ body {
 
 .form-sec {
 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: white;
     margin: 0;
     height: 50vh;
@@ -95,6 +98,7 @@ body {
     margin: 0;
     padding: 2vh 0 0 6vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
 }
 
 .field-flex {
@@ -132,4 +136,17 @@ body {
 
     height: 10vh;
     margin-top: auto;
+}
+
+.form-container {
+
+    width: 36vh;
+}
+
+.reg-img {
+
+    display: flex;
+    align-self: center;
+    margin-bottom: 6vh;
+
 }
