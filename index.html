@@ -34,7 +34,8 @@
             <p class="welcome-msg">Welcome. </p>
         </div>
 
-        <p class="bg-img-footer">Photo by Pawel Nolbert on Unsplash </p>
+        <p class="bg-img-footer">Photo by <a href="https://unsplash.com/photos/4u2U8EO9OzY"> Pawel Nolbert</a> 
+            on <a href="https://unsplash.com"> Unsplash</a> </p>
     </section>
 
     <section class="main-content">
@@ -51,12 +52,14 @@
         <section class="form-sec shadow p-3 mb-5 bg-white rounded">
             <div class="form-container">
                 <h3 class="form-header">Let's Get Started.</h3>
-                <form>
+                <form class="">
                     <p class="req-txt">Required fields are indicated by <strong>*</strong>.</p>
                     <fieldset class="field-flex">
                         <div class="form-group">
                             <label for="fname">First Name <strong>*</strong></label>
-                            <input type="text" name="fname" class="form-control">
+                            <input type="text" name="fname" id="fname-input" class="form-control" minlength="3" required>
+                            <!--div class="valid-feedback">Valid.</div-->
+                            <div class="invalid-feedback">Please fill out this field.</div>
                         </div>
                         <div class="form-group">
                             <label for="lname">Last Name <strong>*</strong></label>
@@ -88,19 +91,22 @@
                             <button type="button" class="btn btn-dark btn-lg">Register</button>
                         </fieldset>
                     </section>
-                    <p class="log-in-txt">Already have an account? Log In</p>
+                    <p class="log-in-txt">Already have an account? <a href="#" class="log-in-link">Log in</a></p>
                 </form>
             </div>
 
             <div class="reg-img">
-                <img src="img/registration-logo.svg" alt="registration logo">
+                <!--img src="img/registration-logo.svg" alt="registration logo"-->
+                <ul class="list-group-flush">
+                    <li class="list-group-item"><strong>-</strong> Minimum 3 Characters</li>
+                    <li class="list-group-item"><strong>-</strong> (123)-456-7890</li>
+                    <li class="list-group-item"><strong>-</strong> Password Requirements</li>
+                  </ul>
             </div>
             
         </section>
 
     </section>
-
-
 
     <script type="text/javascript" src="js/script.js"></script>
     

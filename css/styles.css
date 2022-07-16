@@ -4,6 +4,14 @@ body {
     margin: 0; /* Remove border around page */
 }
 
+a:link { color: white; }
+a:visited { color: white; }
+a:hover { color: gray; }
+
+.log-in-link:link { color: black; font-weight: bold; text-decoration: none;}
+.log-in-link:visited { color: black; }
+.log-in-link:hover { color: gray; }
+
 .bg-img {
 
     background-image: url('../img/city.jpg');
@@ -20,10 +28,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(3, 3, 3, 0.6);
+    background: rgba(3, 3, 3, 0.5);
     width: 100%;
     height: 15vh;
-    margin-top: 30%;
+    margin-top: 22%;
 }
 
 .welcome-msg {
@@ -43,7 +51,6 @@ body {
 
 .bg-img-footer {
 
-    display: flex;
     color: white;
     margin-top: auto;
     background: rgba(3, 3, 3, 0.5);
@@ -123,6 +130,7 @@ body {
 
     padding: 2vh 0 0 6vh;
     margin-top: 1vh;
+    color: black;
 }
 
 
@@ -147,6 +155,12 @@ body {
 
     display: flex;
     align-self: center;
-    margin-bottom: 6vh;
+    margin: 19vh 28vh 0 0;
 
+}
+
+.list-group-item {
+
+    border: 0px !important;
+    margin-bottom: 5vh;
 }
