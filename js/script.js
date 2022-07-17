@@ -26,7 +26,7 @@ myInput.onblur = function() {
 
 // When the user starts to type something inside the password field
 myInput.onkeyup = function() {
-    
+
     // Validate lowercase letters
     var lowerCaseLetters = /[a-z]/g;
     if(myInput.value.match(lowerCaseLetters)) {
@@ -66,3 +66,29 @@ myInput.onkeyup = function() {
       length.classList.add("invalid");
     }
   }
+
+  //Confirm Password
+
+
+const confirmedPassInput = document.getElementById("confpass");
+
+$("#confpass").keyup(function(){
+
+    let currentPass = $("#pswd").val();
+    let confPass = $("#confpass").val();
+
+    if (
+        (confPass == currentPass) && (currentPass != "")
+        ) {
+
+        confirmedPassInput.classList.add("is-valid");
+    }
+
+    else if (confPass != currentPass){
+
+        confirmedPassInput.classList.remove("is-valid");
+
+    }
+
+
+  });
