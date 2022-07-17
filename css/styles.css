@@ -69,7 +69,7 @@ a:hover { color: gray; }
 
     background-color: rgb(247, 247, 247);
     margin: 0;
-    height: 30vh;
+    height: 25vh;
 }
 
 .cta-txt {
@@ -87,7 +87,7 @@ a:hover { color: gray; }
     justify-content: space-between;
     width: 80vh;
     height: 15vh;
-    padding: 12vh 0 0 8vh;
+    padding: 8vh 0 0 8vh;
 }
 
 .form-sec {
@@ -97,7 +97,7 @@ a:hover { color: gray; }
     justify-content: space-between;
     background-color: white;
     margin: 0;
-    height: 50vh;
+    height: 55vh;
 }
 
 .form-header {
@@ -114,21 +114,18 @@ a:hover { color: gray; }
     justify-content: space-between;
     padding: 0 0 0 6vh;
     width: 79vh;
-    margin-bottom: 3vh;
+    margin-bottom: 15px;
 }
 
-.register {
+.log-in {
 
-    display: flex;
-    flex-direction: column;
-    padding: 0 0 0 6vh;
-    width: 28vh;
-    margin-top: 10vh;
+    padding: 0 0 0 8vh;
+    width: 38vh;
+    margin-top: 7vh;
 }
 
 .log-in-txt {
 
-    padding: 2vh 0 0 6vh;
     margin-top: 1vh;
     color: black;
 }
@@ -154,13 +151,61 @@ a:hover { color: gray; }
 .reg-img {
 
     display: flex;
-    align-self: center;
-    margin: 19vh 28vh 0 0;
+    
 
+}
+
+.req-list {
+
+    display: none;
+    margin: 14vh 14vh 0 0;
+
+}
+
+.submit-btn {
+
+    margin: 0 0 0 6vh;
 }
 
 .list-group-item {
 
     border: 0px !important;
-    margin-bottom: 5vh;
+}
+
+label.error.fail-alert {
+    border: 2px solid red;
+    border-radius: 4px;
+    line-height: 1;
+    padding: 3px 2px 5px 2px;
+    background: #ffe6eb;
+    margin-top: 1vh;
+}
+
+input.valid.success-alert {
+border: 2px solid #4CAF50;
+color: green;
+}
+
+/* Password Requirement Styles */
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+    color: green;
+}
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "\01F5F8";
+}
+  
+  /* Add a red text color and an "x" icon when the requirements are wrong */
+  .invalid {
+    color: red;
+}
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "\274c";
 }

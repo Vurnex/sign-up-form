@@ -1,11 +1,15 @@
 # Sign Up Form
 Sign Up Page Project.
 
-What I Learned
+What I learned while working on the project
 
 - Better understanding of Viewport Height / Width
 - Using the style margin: 0 can get rid of unwanted space around elements.
+- How to use some bootstrap styling
+- Instead of putting the script tag at the end of the body, I should instead put it at the top and add **defer** to the end of the tag.
 
-Frameworks Used
+Frameworks and Libraries Used
 
 - Bootstrap
+- jQuery
+- jQuery Validation

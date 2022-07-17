@@ -49,66 +49,70 @@
             </div>
         </section>
 
-        <section class="form-sec shadow p-3 mb-5 bg-white rounded">
+        <section class="form-sec shadow p-3 bg-white rounded">
             <div class="form-container">
                 <h3 class="form-header">Let's Get Started.</h3>
-                <form class="">
+                <form class="form-main" name="registration-form" method="post">
                     <p class="req-txt">Required fields are indicated by <strong>*</strong>.</p>
                     <fieldset class="field-flex">
                         <div class="form-group">
                             <label for="fname">First Name <strong>*</strong></label>
-                            <input type="text" name="fname" id="fname-input" class="form-control" minlength="3" required>
-                            <!--div class="valid-feedback">Valid.</div-->
-                            <div class="invalid-feedback">Please fill out this field.</div>
+                            <input type="text" name="fname" placeholder="John" class="form-control" minlength="3" required>
                         </div>
                         <div class="form-group">
                             <label for="lname">Last Name <strong>*</strong></label>
-                            <input type="text" name="lname" class="form-control">
+                            <input type="text" name="lname" placeholder="Doe" class="form-control" minlength="3" required>
                         </div>
                     </fieldset>
                     <fieldset class="field-flex">
                         <div class="form-group">
                             <label for="email">Email <strong>*</strong></label>
-                            <input type="email" name="email" class="form-control">
+                            <input type="email" name="email" placeholder="hello@mail.com" class="form-control" required>
                         </div>
                         <div class="form-group">
                             <label for="pnum">Phone Number <strong>*</strong></label>
-                            <input type="number" name="fname" class="form-control">
+                            <input type="text" name="phonenum" placeholder="123-456-7890" minlength="10" maxlength="16" class="form-control" required>
                         </div>
                     </fieldset>
                     <fieldset class="field-flex">
                         <div class="form-group">
                             <label for="password">Password <strong>*</strong></label>
-                            <input type="password" name="password" class="form-control">
+                            <input type="password" name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            class="form-control" minlength="8" id="pswd" required>
                         </div>
                         <div class="form-group">
                             <label for="confpass">Confirm Password <strong>*</strong></label>
-                            <input type="password" name="confpass" class="form-control">
+                            <input type="password" name="confpass" placeholder="Confirm Password" class="form-control" minlength="3" required>
                         </div>
                     </fieldset>
-                    <section class="register">
-                        <fieldset class="field-flex-btn">
-                            <button type="button" class="btn btn-dark btn-lg">Register</button>
-                        </fieldset>
-                    </section>
-                    <p class="log-in-txt">Already have an account? <a href="#" class="log-in-link">Log in</a></p>
+
+                    <div class="space"> </div>
+
+                    <button type="submit" class="btn btn-dark btn-lg submit-btn">Register</button>
                 </form>
             </div>
 
-            <div class="reg-img">
-                <!--img src="img/registration-logo.svg" alt="registration logo"-->
+            <div class="req-list" id="pass-req">
+                <strong>Password must contain the following: </strong>
                 <ul class="list-group-flush">
-                    <li class="list-group-item"><strong>-</strong> Minimum 3 Characters</li>
-                    <li class="list-group-item"><strong>-</strong> (123)-456-7890</li>
-                    <li class="list-group-item"><strong>-</strong> Password Requirements</li>
+                    <li class="list-group-item"><p id="letter" class="invalid">A lowercase letter</p></li>
+                    <li class="list-group-item"><p id="capital" class="invalid">A capital (uppercase) letter</p></li>
+                    <li class="list-group-item"><p id="number" class="invalid">A number</p></li>
+                    <li class="list-group-item"><p id="length" class="invalid">Minimum of 8 characters</p></li>
                   </ul>
             </div>
             
         </section>
 
+        <section class="log-in">
+            <p class="log-in-txt">Already have an account? <a href="#" class="log-in-link">Log in</a></p>
+        </section>
+        
+
     </section>
 
     <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
     
   </body>
 
