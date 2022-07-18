@@ -69,26 +69,26 @@ myInput.onkeyup = function() {
 
   //Confirm Password
 
+  //Add a method for validating the format of the password to the jQuery Validator.
 
-const confirmedPassInput = document.getElementById("confpass");
+  $.validator.addMethod(
+    "pattern",
+    function(value, element, regexp) {
+      var re = new RegExp(regexp);
+      return this.optional(element) || re.test(value);
+    },
+    "Please check your input."
+  );
 
-$("#confpass").keyup(function(){
+  $("#pswd").rules("add", { pattern: "(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" });
+  $("#confpass").rules("add", { pattern: "(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" });
 
-    let currentPass = $("#pswd").val();
-    let confPass = $("#confpass").val();
-
-    if (
-        (confPass == currentPass) && (currentPass != "")
-        ) {
-
-        confirmedPassInput.classList.add("is-valid");
+  //Add validation rule for confirming that passwords match.
+  $( "#confpass" ).validate({
+    rules: {
+      password: "required",
+      password_again: {
+        equalTo: "#password"
+      }
     }
-
-    else if (confPass != currentPass){
-
-        confirmedPassInput.classList.remove("is-valid");
-
-    }
-
-
   });
