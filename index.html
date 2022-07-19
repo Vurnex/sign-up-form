@@ -27,90 +27,81 @@
 
   <body>
 
-    <section class="bg-img">
-
-        <div class="bg-img-header">
-            <img src="img/registration-icon.svg" alt="Registration Icon">
-            <p class="welcome-msg">Welcome. </p>
-        </div>
-
-        <p class="bg-img-footer">Photo by <a href="https://unsplash.com/photos/4u2U8EO9OzY"> Pawel Nolbert</a> 
-            on <a href="https://unsplash.com"> Unsplash</a> </p>
-    </section>
-
-    <section class="main-content">
-
-        <section class="call-to-action">
-            <div class="cta-container">
-                <p class="cta-txt">This sign up page acts as a mock up for a real one. It is not meant to do anything other than serve as an example. However, that doesn't mean you
-                    can't test it out! Go ahead.
-                </p>
-                <p class="cta-txt">I definitely encourage it.</p>
+    <div class="all-content">
+        <section class="bg-img">
+            <div class="bg-img-header">
+                <img src="img/registration-icon.svg" alt="Registration Icon" class="welcome-logo">
+                <p class="welcome-msg">Welcome. </p>
             </div>
+            <p class="bg-img-footer">Photo by <a href="https://unsplash.com/photos/4u2U8EO9OzY"> Pawel Nolbert</a>
+                on <a href="https://unsplash.com"> Unsplash</a> </p>
         </section>
-
-        <section class="form-sec shadow p-3 bg-white rounded">
-            <div class="form-container">
-                <h3 class="form-header">Let's Get Started.</h3>
-                <form class="form-main" name="registration-form" method="post">
-                    <p class="req-txt">Required fields are indicated by <strong>*</strong>.</p>
-                    <fieldset class="field-flex">
-                        <div class="form-group">
-                            <label for="fname">First Name <strong>*</strong></label>
-                            <input type="text" name="fname" placeholder="John" class="form-control" minlength="3" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="lname">Last Name <strong>*</strong></label>
-                            <input type="text" name="lname" placeholder="Doe" class="form-control" minlength="3" required>
-                        </div>
-                    </fieldset>
-                    <fieldset class="field-flex">
-                        <div class="form-group">
-                            <label for="email">Email <strong>*</strong></label>
-                            <input type="email" name="email" placeholder="hello@mail.com" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="pnum">Phone Number <strong>*</strong></label>
-                            <input type="text" name="phonenum" placeholder="123-456-7890" minlength="10" maxlength="16" class="form-control" required>
-                        </div>
-                    </fieldset>
-                    <fieldset class="field-flex">
-                        <div class="form-group">
-                            <label for="password">Password <strong>*</strong></label>
-                            <input type="password" name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                            class="form-control" minlength="8" id="pswd" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="confpass">Confirm Password <strong>*</strong></label>
-                            <input type="password" name="confpass" id="confpass" placeholder="Confirm Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
-                            data-rule-equalTo="#pswd" class="form-control" minlength="8" required>
-                        </div>
-                    </fieldset>
-
-                    <div class="space"> </div>
-
-                    <button type="submit" class="btn btn-dark btn-lg submit-btn">Register</button>
-                </form>
-            </div>
-
-            <div class="req-list" id="pass-req">
-                <strong>Password must contain the following: </strong>
-                <ul class="list-group-flush">
-                    <li class="list-group-item"><p id="letter" class="invalid">A lowercase letter</p></li>
-                    <li class="list-group-item"><p id="capital" class="invalid">A capital (uppercase) letter</p></li>
-                    <li class="list-group-item"><p id="number" class="invalid">A number</p></li>
-                    <li class="list-group-item"><p id="length" class="invalid">Minimum of 8 characters</p></li>
-                  </ul>
-            </div>
-            
-        </section>
-
-        <section class="log-in">
-            <p class="log-in-txt">Already have an account? <a href="#" class="log-in-link">Log in</a></p>
-        </section>
+        <section class="main-content">
+            <section class="call-to-action">
+                <div class="cta-container">
+                    <p class="cta-txt">This sign up page acts as a mock up for a real one. It is not meant to do anything other than serve as an example. However, that doesn't mean you
+                        can't test it out! Go ahead.
+                    </p>
+                    <p class="cta-txt">I definitely encourage it.</p>
+                </div>
+            </section>
+            <section class="form-sec shadow p-3 bg-white rounded">
+                <div class="form-container">
+                    <h3 class="form-header">Let's Get Started.</h3>
+                    <form class="form-main" name="registration-form" method="post">
+                        <p class="req-txt">Required fields are indicated by <strong>*</strong>.</p>
+                        <fieldset class="field-flex">
+                            <div class="form-group">
+                                <label for="fname">First Name <strong>*</strong></label>
+                                <input type="text" name="fname" placeholder="John" class="form-control" minlength="3" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lname">Last Name <strong>*</strong></label>
+                                <input type="text" name="lname" placeholder="Doe" class="form-control" minlength="3" required>
+                            </div>
+                        </fieldset>
+                        <fieldset class="field-flex">
+                            <div class="form-group">
+                                <label for="email">Email <strong>*</strong></label>
+                                <input type="email" name="email" placeholder="hello@mail.com" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="pnum">Phone Number <strong>*</strong></label>
+                                <input type="text" name="phonenum" placeholder="123-456-7890" minlength="10" maxlength="16" class="form-control" required>
+                            </div>
+                        </fieldset>
+                        <fieldset class="field-flex">
+                            <div class="form-group">
+                                <label for="password">Password <strong>*</strong></label>
+                                <input type="password" name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                class="form-control" minlength="8" id="pswd" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="confpass">Confirm Password <strong>*</strong></label>
+                                <input type="password" name="confpass" id="confpass" placeholder="Confirm Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                data-rule-equalTo="#pswd" class="form-control" minlength="8" required>
+                            </div>
+                        </fieldset>
+                        <div class="submit-btn"><button type="submit" class="btn btn-dark btn-lg">Register</button></div>
+                    </form>
+                </div>
+                <div class="req-list" id="pass-req">
+                    <strong>Password must contain the following: </strong>
+                    <ul class="list-group-flush">
+                        <li class="list-group-item"><p id="letter" class="invalid">A lowercase letter</p></li>
+                        <li class="list-group-item"><p id="capital" class="invalid">A capital (uppercase) letter</p></li>
+                        <li class="list-group-item"><p id="number" class="invalid">A number</p></li>
+                        <li class="list-group-item"><p id="length" class="invalid">Minimum of 8 characters</p></li>
+                      </ul>
+                </div>
         
-
-    </section>
+            </section>
+            <section class="log-in">
+                <p class="log-in-txt">Already have an account? <a href="#" class="log-in-link">Log in</a></p>
+            </section>
+        
+        </section>
+    </div>
 
     <script type="text/javascript" src="js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
